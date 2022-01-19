@@ -17,7 +17,7 @@ import Chart from "../Chart/Chart";
         {label:"Dec",value:0}    
     ]
     for(const expense of props.expenses){
-        const expenseMonth = expense.date.getMonth();//month starts at 0
+        const expenseMonth = expense.date.getMonth();//month starts at 0 it is index of datapointsarray
         chartDataPoints[expenseMonth].value += expense.amount;
     }
      return <Chart dataPoints={chartDataPoints}/>
