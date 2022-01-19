@@ -3,7 +3,9 @@ import ChartBar from "./ChartBar";
 import "./Chart.css";
 
 const Chart = (props)=>{
-
+    
+    
+    //find the datapoint with heighest expenses
     const dataPointValues = props.dataPoints.map(datapoint => datapoint.value);
     const maximumValue = Math.max(...dataPointValues);
 
