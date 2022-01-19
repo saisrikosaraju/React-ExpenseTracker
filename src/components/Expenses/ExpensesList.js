@@ -2,6 +2,8 @@ import React from "react";
 import "./ExpensesList.css";
 import ExpenseItem from "./ExpenseItem";
 
+//conditionally checking if there are any expenses present for currently selected year
+
 const ExpensesList = (props)=>{
     
     if(props.items.length === 0){
